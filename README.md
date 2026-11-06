@@ -1,5 +1,7 @@
 # Movie Mood Recommendation System
 
+-------------LIVE LINK: https://movie-mood.hatchable.site/ -------------
+
 Developers: Nitin Kumar (25BCA10442) and Anshika (25BCA10338).
 
 Objective: A full-stack DBMS project using relational mood-to-movie recommendations plus authentication, reviews, watch history, search/filtering and admin CRUD.
