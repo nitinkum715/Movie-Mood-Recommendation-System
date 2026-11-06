@@ -1,0 +1,1 @@
+CREATE TABLE app_users (user_id uuid PRIMARY KEY DEFAULT gen_random_uuid(), auth_user_id text NOT NULL UNIQUE, name varchar(100) NOT NULL, email varchar(255) NOT NULL UNIQUE, role varchar(20) NOT NULL DEFAULT 'user', created_at timestamptz NOT NULL DEFAULT now(), CHECK (role IN ('user','admin')))

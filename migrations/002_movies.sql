@@ -1,0 +1,1 @@
+CREATE TABLE movies (movie_id uuid PRIMARY KEY DEFAULT gen_random_uuid(), title varchar(200) NOT NULL, genre varchar(100) NOT NULL, language varchar(60) NOT NULL, release_year int NOT NULL CHECK (release_year BETWEEN 1900 AND 2100), rating numeric(3,1) NOT NULL DEFAULT 0 CHECK (rating BETWEEN 0 AND 10), description text NOT NULL, poster_url text)

@@ -1,0 +1,1 @@
+CREATE TABLE moods (mood_id uuid PRIMARY KEY DEFAULT gen_random_uuid(), mood_name varchar(60) NOT NULL UNIQUE)

@@ -1,0 +1,1 @@
+CREATE TABLE reviews (review_id uuid PRIMARY KEY DEFAULT gen_random_uuid(), user_id uuid NOT NULL REFERENCES app_users(user_id) ON DELETE CASCADE, movie_id uuid NOT NULL REFERENCES movies(movie_id) ON DELETE CASCADE, rating int NOT NULL CHECK (rating BETWEEN 1 AND 5), comment text NOT NULL, review_date timestamptz NOT NULL DEFAULT now(), UNIQUE(user_id,movie_id))

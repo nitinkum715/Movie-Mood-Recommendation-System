@@ -1,0 +1,1 @@
+CREATE TABLE movie_mood (movie_id uuid NOT NULL REFERENCES movies(movie_id) ON DELETE CASCADE, mood_id uuid NOT NULL REFERENCES moods(mood_id) ON DELETE CASCADE, PRIMARY KEY (movie_id,mood_id))
